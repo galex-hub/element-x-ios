@@ -1198,7 +1198,7 @@
 "screen_room_timeline_add_reaction" = "ემოჯის დამატება";
 "screen_room_timeline_beginning_of_room" = "ეს არის %1$@-ს დასაწყისი.";
 "screen_room_timeline_beginning_of_room_no_name" = "ეს არის ამ საუბრის დასაწყისი.";
-"screen_room_timeline_legacy_call" = "Unsupported call. Ask if the caller can use the new Element X app.";
+"screen_room_timeline_legacy_call" = "Unsupported call. Ask if the caller can use the new Privox app.";
 "screen_room_timeline_less_reactions" = "ნაკლების ჩვენება";
 "screen_room_timeline_message_copied" = "შეტყობინება დაკოპირდა";
 "screen_room_timeline_no_permission_to_post" = "თქვენ არ გაქვთ ამ ოთახში გამოქვეყნების ნებართვა";
@@ -1230,7 +1230,7 @@
 "screen_roomlist_main_space_title" = "ჩატები";
 "screen_roomlist_mark_as_read" = "წაკითხულად მონიშვნა";
 "screen_roomlist_mark_as_unread" = "წაუკითხავად მონიშვნა";
-"screen_server_confirmation_message_login_element_dot_io" = "კერძო სერვერი Element-ის თანამშრომლებისთვის.";
+"screen_server_confirmation_message_login_element_dot_io" = "სწრაფი და უსაფრთხო სერვერი";
 "screen_server_confirmation_message_login_matrix_dot_org" = "Matrix არის ღია ქსელი უსაფრთხო, დეცენტრალიზებული კომუნიკაციისთვის.";
 "screen_server_confirmation_message_register" = "აქ იქნება თქვენი საუბრები - ისევე, როგორც თქვენ ელ. ფოსტაში ინახება თქვენი ელ.წერილები.";
 "screen_server_confirmation_title_login" = "თქვენ აპირებთ შესვლას %1$@-ში";

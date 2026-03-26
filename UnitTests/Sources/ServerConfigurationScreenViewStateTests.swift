@@ -17,15 +17,15 @@ struct ServerConfirmationScreenViewStateTests {
                                                                   authenticationFlow: .login)
         #expect(matrixDotOrgLogin.message == L10n.screenServerConfirmationMessageLoginMatrixDotOrg, "matrix.org should have a custom message.")
         
-        let elementDotIoLogin = ServerConfirmationScreenViewState(mode: .confirmation("element.io"),
+        let elementDotIoLogin = ServerConfirmationScreenViewState(mode: .confirmation("privox.im"),
                                                                   authenticationFlow: .login)
-        #expect(elementDotIoLogin.message == L10n.screenServerConfirmationMessageLoginElementDotIo, "element.io should have a custom message.")
+        #expect(elementDotIoLogin.message == L10n.screenServerConfirmationMessageLoginElementDotIo, "privox.im should have a custom message.")
         
         let otherLogin = ServerConfirmationScreenViewState(mode: .confirmation(LoginHomeserver.mockOIDC.address),
                                                            authenticationFlow: .login)
         #expect(otherLogin.message == "", "Other servers should not show a message.")
         
-        let pickerLogin = ServerConfirmationScreenViewState(mode: .picker(["element.io", "matrix.org"]),
+        let pickerLogin = ServerConfirmationScreenViewState(mode: .picker(["privox.im", "matrix.org"]),
                                                             authenticationFlow: .login)
         #expect(pickerLogin.message == nil, "The picker mode should not show a message.")
     }

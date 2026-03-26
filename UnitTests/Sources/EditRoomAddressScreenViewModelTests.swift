@@ -147,7 +147,7 @@ struct EditRoomAddressScreenViewModelTests {
     mutating func correctMethodsCalledOnSaveWhenAliasOnOtherHomeserverExists() async {
         let clientProxy = ClientProxyMock(.init(userIDServerName: "matrix.org"))
         clientProxy.isAliasAvailableReturnValue = .success(true)
-        let roomProxy = JoinedRoomProxyMock(.init(name: "Room Name", canonicalAlias: "#old-room-name:element.io"))
+        let roomProxy = JoinedRoomProxyMock(.init(name: "Room Name", canonicalAlias: "#old-room-name:privox.im"))
         
         viewModel = EditRoomAddressScreenViewModel(roomProxy: roomProxy,
                                                    clientProxy: clientProxy,
@@ -164,7 +164,7 @@ struct EditRoomAddressScreenViewModelTests {
             
             roomProxy.updateCanonicalAliasAltAliasesClosure = { roomAlias, altAliases in
                 #expect(altAliases == ["#room-name:matrix.org"])
-                #expect(roomAlias == "#old-room-name:element.io")
+                #expect(roomAlias == "#old-room-name:privox.im")
                 confirm()
                 return .success(())
             }

@@ -733,18 +733,18 @@ struct AttributedStringBuilderTests {
     
     @Test
     func phishingLink() throws {
-        let htmlString = "Hey check the following link <a href=\"https://matrix.org\">https://element.io</a>"
+        let htmlString = "Hey check the following link <a href=\"https://matrix.org\">https://privox.im</a>"
         
         let attributedString = try #require(attributedStringBuilder.fromHTML(htmlString), "Could not build the attributed string")
         
-        #expect(String(attributedString.characters) == "Hey check the following link https://element.io")
+        #expect(String(attributedString.characters) == "Hey check the following link https://privox.im")
         
         #expect(attributedString.runs.count == 2)
         
         let link = try #require(attributedString.runs.first { $0.link != nil }?.link, "Couldn't find the link")
         #expect(link.requiresConfirmation)
         #expect(link.confirmationParameters?.internalURL.absoluteString == "https://matrix.org")
-        #expect(link.confirmationParameters?.displayString == "https://element.io")
+        #expect(link.confirmationParameters?.displayString == "https://privox.im")
     }
     
     @Test
@@ -832,31 +832,31 @@ struct AttributedStringBuilderTests {
     
     @Test
     func phishingLinkWithDistractingCharacters() throws {
-        let htmlString = "Hey check the following link <a href=\"https://matrix.org\">👉️ https://element.io</a>"
+        let htmlString = "Hey check the following link <a href=\"https://matrix.org\">👉️ https://privox.im</a>"
         
         let attributedString = try #require(attributedStringBuilder.fromHTML(htmlString), "Could not build the attributed string")
         
-        #expect(String(attributedString.characters) == "Hey check the following link 👉️ https://element.io")
+        #expect(String(attributedString.characters) == "Hey check the following link 👉️ https://privox.im")
         
         #expect(attributedString.runs.count == 2)
         
         let link = try #require(attributedString.runs.first { $0.link != nil }?.link, "Couldn't find the link")
         #expect(link.requiresConfirmation)
         #expect(link.confirmationParameters?.internalURL.absoluteString == "https://matrix.org")
-        #expect(link.confirmationParameters?.displayString == "👉️ https://element.io")
+        #expect(link.confirmationParameters?.displayString == "👉️ https://privox.im")
     }
     
     @Test
     func validLinkWithDistractingCharacters() throws {
-        let htmlString = "Hey check the following link <a href=\"https://element.io\">👉️ https://element.io</a>"
+        let htmlString = "Hey check the following link <a href=\"https://privox.im\">👉️ https://privox.im</a>"
         
         let attributedString = try #require(attributedStringBuilder.fromHTML(htmlString), "Could not build the attributed string")
-        #expect(String(attributedString.characters) == "Hey check the following link 👉️ https://element.io")
+        #expect(String(attributedString.characters) == "Hey check the following link 👉️ https://privox.im")
         
         let link = try #require(attributedString.runs.first { $0.link != nil }?.link, "Couldn't find the link")
         
         #expect(!link.requiresConfirmation)
-        #expect(link.absoluteString == "https://element.io")
+        #expect(link.absoluteString == "https://privox.im")
     }
     
     @Test

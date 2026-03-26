@@ -65,7 +65,7 @@ struct URLComponentsTests {
     
     @Test
     func elementCallParameters() throws {
-        let url = try #require(URL(string: "https://call.element.io/room#/callName?appPrompt=true&confineToRoom=false"))
+        let url = try #require(URL(string: "https://call.privox.im/room#/callName?appPrompt=true&confineToRoom=false"))
         var components = try #require(URLComponents(url: url, resolvingAgainstBaseURL: true))
         
         components.fragmentQueryItems?.removeAll { $0.name == "appPrompt" }
@@ -76,6 +76,6 @@ struct URLComponentsTests {
         components.fragmentQueryItems?.append(.init(name: "appPrompt", value: "false"))
         components.fragmentQueryItems?.append(.init(name: "confineToRoom", value: "true"))
         
-        #expect(components.url?.absoluteString == "https://call.element.io/room#/callName?skipLobby=true&appPrompt=false&confineToRoom=true")
+        #expect(components.url?.absoluteString == "https://call.privox.im/room#/callName?skipLobby=true&appPrompt=false&confineToRoom=true")
     }
 }

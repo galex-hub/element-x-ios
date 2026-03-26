@@ -10,7 +10,7 @@ import XCTest
 
 @MainActor
 class UserFlowTests: XCTestCase {
-    private static let integrationTestsRoomName = "Element X iOS Integration Tests"
+    private static let integrationTestsRoomName = "Privox iOS Integration Tests"
     private static let integrationTestsMessage = "Go down in flames!"
     
     private var app: XCUIApplication!

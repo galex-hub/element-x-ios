@@ -153,11 +153,13 @@ struct SettingsScreen: View {
                     })
                     .accessibilityIdentifier(A11yIdentifiers.settingsScreen.advancedSettings)
             
-            ListRow(label: .default(title: L10n.screenAdvancedSettingsLabs,
-                                    icon: \.labs),
-                    kind: .navigationLink {
-                        context.send(viewAction: .labs)
-                    })
+            if context.viewState.showLabs {
+                ListRow(label: .default(title: L10n.screenAdvancedSettingsLabs,
+                                        icon: \.labs),
+                        kind: .navigationLink {
+                            context.send(viewAction: .labs)
+                        })
+            }
             
             ListRow(label: .default(title: L10n.commonAbout,
                                     icon: \.info),
@@ -237,6 +239,7 @@ struct SettingsScreen: View {
         .textSelection(.enabled)
         .padding(.top, 24)
         .onTapGesture(count: 7) {
+            guard AppSettings.appBuildType != .release else { return }
             context.send(viewAction: .enableDeveloperOptions)
         }
     }

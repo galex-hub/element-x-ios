@@ -1198,7 +1198,7 @@
 "screen_room_timeline_add_reaction" = "Emodzsi hozzáadása";
 "screen_room_timeline_beginning_of_room" = "Ez a(z) %1$@ kezdete.";
 "screen_room_timeline_beginning_of_room_no_name" = "Ez a beszélgetés kezdete.";
-"screen_room_timeline_legacy_call" = "Nem támogatott hívás. Kérdezze meg, hogy a hívó fél tudja-e használni az új Element X alkalmazást.";
+"screen_room_timeline_legacy_call" = "Nem támogatott hívás. Kérdezze meg, hogy a hívó fél tudja-e használni az új Privox alkalmazást.";
 "screen_room_timeline_less_reactions" = "Kevesebb megjelenítése";
 "screen_room_timeline_message_copied" = "Üzenet másolva";
 "screen_room_timeline_no_permission_to_post" = "Nincs jogosultsága arra, hogy bejegyzést tegyen közzé ebben a szobában";
@@ -1230,7 +1230,7 @@
 "screen_roomlist_main_space_title" = "Összes csevegés";
 "screen_roomlist_mark_as_read" = "Megjelölés olvasottként";
 "screen_roomlist_mark_as_unread" = "Megjelölés olvasatlanként";
-"screen_server_confirmation_message_login_element_dot_io" = "Egy privát kiszolgáló az Element alkalmazottai számára.";
+"screen_server_confirmation_message_login_element_dot_io" = "Gyors és biztonságos kiszolgáló";
 "screen_server_confirmation_message_login_matrix_dot_org" = "A Matrix egy nyitott hálózat a biztonságos, decentralizált kommunikációhoz.";
 "screen_server_confirmation_message_register" = "Itt lesznek a beszélgetései – ahogyan egy e-mail-szolgáltatást is használna a levelei kezeléséhez.";
 "screen_server_confirmation_title_login" = "Hamarosan bejelentkezik ebbe: %1$@";

@@ -1198,7 +1198,7 @@
 "screen_room_timeline_add_reaction" = "Dodaj reakciju";
 "screen_room_timeline_beginning_of_room" = "Ovo je početak sobe %1$@.";
 "screen_room_timeline_beginning_of_room_no_name" = "Ovo je početak ovog razgovora.";
-"screen_room_timeline_legacy_call" = "Nepodržani poziv. Pitajte pozivatelja može li se služiti novom aplikacijom Element X.";
+"screen_room_timeline_legacy_call" = "Nepodržani poziv. Pitajte pozivatelja može li se služiti novom aplikacijom Privox.";
 "screen_room_timeline_less_reactions" = "Prikaži manje";
 "screen_room_timeline_message_copied" = "Poruka je kopirana";
 "screen_room_timeline_no_permission_to_post" = "Nemate dopuštenje za objavljivanje u ovoj sobi";
@@ -1230,7 +1230,7 @@
 "screen_roomlist_main_space_title" = "Razgovori";
 "screen_roomlist_mark_as_read" = "Označi kao pročitano";
 "screen_roomlist_mark_as_unread" = "Označi kao nepročitano";
-"screen_server_confirmation_message_login_element_dot_io" = "Privatni poslužitelj za zaposlenike aplikacije Element.";
+"screen_server_confirmation_message_login_element_dot_io" = "Brzi i siguran poslužitelj";
 "screen_server_confirmation_message_login_matrix_dot_org" = "Matrix je otvorena mreža za sigurnu, decentraliziranu komunikaciju.";
 "screen_server_confirmation_message_register" = "Ovdje će se čuvati vaši razgovori – baš kao što biste koristili davatelja usluga e-pošte za čuvanje svojih e-poruka.";
 "screen_server_confirmation_title_login" = "Prijavit ćete se na poslužitelj %1$@";

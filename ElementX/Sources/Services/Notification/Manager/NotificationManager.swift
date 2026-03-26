@@ -165,8 +165,7 @@ final class NotificationManager: NSObject, NotificationManagerProtocol {
     private func setPusher(with deviceToken: Data, clientProxy: ClientProxyProtocol) async -> Bool {
         do {
             let defaultPayload = APNSPayload(aps: APSInfo(mutableContent: 1,
-                                                          alert: APSAlert(locKey: "Notification",
-                                                                          locArgs: [])),
+                                                          alert: APSAlert(locKey: "Notification", locArgs: [])),
                                              pusherNotificationClientIdentifier: clientProxy.pusherNotificationClientIdentifier)
 
             let configuration = try await PusherConfiguration(identifiers: .init(pushkey: deviceToken.base64EncodedString(),
@@ -178,6 +177,7 @@ final class NotificationManager: NSObject, NotificationManagerProtocol {
                                                               deviceDisplayName: UIDevice.current.name,
                                                               profileTag: pusherProfileTag(),
                                                               lang: Bundle.app.preferredLocalizations.first ?? "en")
+
             try await clientProxy.setPusher(with: configuration)
             MXLog.info("Set pusher succeeded")
             return true
@@ -186,7 +186,7 @@ final class NotificationManager: NSObject, NotificationManagerProtocol {
             return false
         }
     }
-
+    
     private func pusherProfileTag() -> String {
         if let currentTag = appSettings.pusherProfileTag {
             return currentTag

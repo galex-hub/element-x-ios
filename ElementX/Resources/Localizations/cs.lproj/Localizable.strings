@@ -1198,7 +1198,7 @@
 "screen_room_timeline_add_reaction" = "Přidat emoji";
 "screen_room_timeline_beginning_of_room" = "Toto je začátek %1$@.";
 "screen_room_timeline_beginning_of_room_no_name" = "Toto je začátek této konverzace.";
-"screen_room_timeline_legacy_call" = "Nepodporované volání. Zeptejte se, zda volající může používat novou aplikaci Element X.";
+"screen_room_timeline_legacy_call" = "Nepodporované volání. Zeptejte se, zda volající může používat novou aplikaci Privox.";
 "screen_room_timeline_less_reactions" = "Zobrazit méně";
 "screen_room_timeline_message_copied" = "Zpráva zkopírována";
 "screen_room_timeline_no_permission_to_post" = "Nemáte oprávnění zveřejňovat příspěvky v této místnosti";
@@ -1230,7 +1230,7 @@
 "screen_roomlist_main_space_title" = "Všechny chaty";
 "screen_roomlist_mark_as_read" = "Označit jako přečtené";
 "screen_roomlist_mark_as_unread" = "Označit jako nepřečtené";
-"screen_server_confirmation_message_login_element_dot_io" = "Soukromý server pro zaměstnance Elementu.";
+"screen_server_confirmation_message_login_element_dot_io" = "Rychlý a bezpečný server";
 "screen_server_confirmation_message_login_matrix_dot_org" = "Matrix je otevřená síť pro bezpečnou a decentralizovanou komunikaci.";
 "screen_server_confirmation_message_register" = "Zde budou uloženy vaše konverzace - podobně jako u poskytovatele e-mailových služeb uchováváte své e-maily.";
 "screen_server_confirmation_title_login" = "Chystáte se přihlásit do služby %1$@";

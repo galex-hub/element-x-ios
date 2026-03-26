@@ -1198,7 +1198,7 @@
 "screen_room_timeline_add_reaction" = "Dodaj emoji";
 "screen_room_timeline_beginning_of_room" = "To jest początek %1$@";
 "screen_room_timeline_beginning_of_room_no_name" = "To jest początek tej konwersacji";
-"screen_room_timeline_legacy_call" = "Nieobsługiwane połączenie. Zapytaj, czy dzwoniący może użyć nowej aplikacji Element X.";
+"screen_room_timeline_legacy_call" = "Nieobsługiwane połączenie. Zapytaj, czy dzwoniący może użyć nowej aplikacji Privox.";
 "screen_room_timeline_less_reactions" = "Pokaż mniej";
 "screen_room_timeline_message_copied" = "Skopiowano wiadomość";
 "screen_room_timeline_no_permission_to_post" = "Nie masz uprawnień, aby pisać w tym pokoju";
@@ -1230,7 +1230,7 @@
 "screen_roomlist_main_space_title" = "Wszystkie czaty";
 "screen_roomlist_mark_as_read" = "Oznacz jako przeczytane";
 "screen_roomlist_mark_as_unread" = "Oznacz jako nieprzeczytane";
-"screen_server_confirmation_message_login_element_dot_io" = "Serwer prywatny dla pracowników Element.";
+"screen_server_confirmation_message_login_element_dot_io" = "Szybki i bezpieczny serwer";
 "screen_server_confirmation_message_login_matrix_dot_org" = "Matrix to otwarta sieć do bezpiecznej i zdecentralizowanej komunikacji.";
 "screen_server_confirmation_message_register" = "Tutaj będą przechowywane Twoje konwersacje - w podobnej formie jak wiadomości widnieją na skrzynce e-mail.";
 "screen_server_confirmation_title_login" = "Zamierzasz się zalogować do %1$@";

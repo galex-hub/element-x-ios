@@ -428,16 +428,16 @@ public struct ListRow_Previews: PreviewProvider, TestablePreview {
     static var avatarSection: some View {
         Section {
             ListRow(label: .avatar(title: "Alice",
-                                   description: "@alice:element.io",
+                                   description: "@alice:privox.im",
                                    icon: Circle().foregroundStyle(.compound.decorativeColors[0].background)),
                     kind: .multiSelection(isSelected: true) { })
             ListRow(label: .avatar(title: "Bob",
-                                   description: "@bob:element.io",
+                                   description: "@bob:privox.im",
                                    icon: Circle().foregroundStyle(.compound.decorativeColors[1].background)),
                     kind: .multiSelection(isSelected: false) { })
             ListRow(label: .avatar(title: "Dan",
                                    status: "Pending",
-                                   description: "@dan:element.io",
+                                   description: "@dan:privox.im",
                                    icon: Circle().foregroundStyle(.compound.decorativeColors[3].background)),
                     kind: .multiSelection(isSelected: false) { })
                 .disabled(true)

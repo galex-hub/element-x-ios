@@ -13,6 +13,7 @@ typealias SettingsScreenViewModelType = StateStoreViewModelV2<SettingsScreenView
 
 class SettingsScreenViewModel: SettingsScreenViewModelType, SettingsScreenViewModelProtocol {
     private let appSettings: AppSettings
+    private let areDeveloperOptionsAllowed: Bool
     
     private var actionsSubject: PassthroughSubject<SettingsScreenViewModelAction, Never> = .init()
     
@@ -22,17 +23,20 @@ class SettingsScreenViewModel: SettingsScreenViewModelType, SettingsScreenViewMo
     
     init(userSession: UserSessionProtocol, appSettings: AppSettings, isBugReportServiceEnabled: Bool) {
         self.appSettings = appSettings
+        areDeveloperOptionsAllowed = AppSettings.appBuildType != .release
         
         super.init(initialViewState: .init(deviceID: userSession.clientProxy.deviceID,
                                            userID: userSession.clientProxy.userID,
                                            showLinkNewDeviceButton: appSettings.linkNewDeviceEnabled,
                                            showAccountDeactivation: userSession.clientProxy.canDeactivateAccount,
-                                           showDeveloperOptions: appSettings.developerOptionsEnabled,
+                                           showDeveloperOptions: areDeveloperOptionsAllowed && appSettings.developerOptionsEnabled,
+                                           showLabs: AppSettings.appBuildType != .release,
                                            showAnalyticsSettings: appSettings.canPromptForAnalytics,
                                            isBugReportServiceEnabled: isBugReportServiceEnabled),
                    mediaProvider: userSession.mediaProvider)
         
         appSettings.$developerOptionsEnabled
+            .map { [areDeveloperOptionsAllowed] in areDeveloperOptionsAllowed && $0 }
             .weakAssign(to: \.state.showDeveloperOptions, on: self)
             .store(in: &cancellables)
         
@@ -123,8 +127,10 @@ class SettingsScreenViewModel: SettingsScreenViewModelType, SettingsScreenViewMo
         case .labs:
             actionsSubject.send(.labs)
         case .enableDeveloperOptions:
+            guard areDeveloperOptionsAllowed else { return }
             appSettings.developerOptionsEnabled.toggle()
         case .developerOptions:
+            guard areDeveloperOptionsAllowed else { return }
             actionsSubject.send(.developerOptions)
         case .deactivateAccount:
             actionsSubject.send(.deactivateAccount)

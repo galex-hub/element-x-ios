@@ -100,8 +100,6 @@ class ServerConfirmationScreenViewModel: ServerConfirmationScreenViewModelType, 
                 displayError(.login)
             case .registrationNotSupported:
                 displayError(.registration)
-            case .elementProRequired(let serverName):
-                displayError(.elementProRequired(serverName: serverName))
             default:
                 displayError(.unknownError)
             }
@@ -190,14 +188,6 @@ class ServerConfirmationScreenViewModel: ServerConfirmationScreenViewModelType, 
             state.bindings.alertInfo = AlertInfo(id: .registration,
                                                  title: L10n.commonServerNotSupported,
                                                  message: L10n.errorAccountCreationNotPossible)
-        case .elementProRequired(let serverName):
-            state.bindings.alertInfo = AlertInfo(id: .elementProRequired(serverName: serverName),
-                                                 title: L10n.screenChangeServerErrorElementProRequiredTitle,
-                                                 message: L10n.screenChangeServerErrorElementProRequiredMessage(serverName),
-                                                 primaryButton: .init(title: L10n.screenChangeServerErrorElementProRequiredActionIos) {
-                                                     UIApplication.shared.open(self.appSettings.elementProAppStoreURL)
-                                                 },
-                                                 secondaryButton: .init(title: L10n.actionCancel, role: .cancel, action: nil))
         case .unknownError:
             state.bindings.alertInfo = AlertInfo(id: .unknownError)
         }

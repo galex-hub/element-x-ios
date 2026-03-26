@@ -1198,7 +1198,7 @@
 "screen_room_timeline_add_reaction" = "Gehitu emojia";
 "screen_room_timeline_beginning_of_room" = "Hauxe da %1$@(r)en hasiera";
 "screen_room_timeline_beginning_of_room_no_name" = "Hau da elkarrizketaren hasiera.";
-"screen_room_timeline_legacy_call" = "Deia ez da bateragarria. Galdetu deika ari denari Element X aplikazio berria erabil dezakeen.";
+"screen_room_timeline_legacy_call" = "Deia ez da bateragarria. Galdetu deika ari denari Privox aplikazio berria erabil dezakeen.";
 "screen_room_timeline_less_reactions" = "Erakutsi gutxiago";
 "screen_room_timeline_message_copied" = "Mezua kopiatu da";
 "screen_room_timeline_no_permission_to_post" = "Ez duzu gela honetara mezuak bidaltzeko baimenik";
@@ -1230,7 +1230,7 @@
 "screen_roomlist_main_space_title" = "Txatak";
 "screen_roomlist_mark_as_read" = "Markatu irakurritzat";
 "screen_roomlist_mark_as_unread" = "Markatu irakurri gabetzat";
-"screen_server_confirmation_message_login_element_dot_io" = "Elementeko langileentzako zerbitzari pribatua.";
+"screen_server_confirmation_message_login_element_dot_io" = "Zerbitzari azkar eta segurua";
 "screen_server_confirmation_message_login_matrix_dot_org" = "Matrix komunikazio seguru eta deszentralizaturako sare irekia da.";
 "screen_server_confirmation_message_register" = "This is where your conversations will live — just like you would use an email provider to keep your emails.";
 "screen_server_confirmation_title_login" = "%1$@(e)n saioa hastear zaude";

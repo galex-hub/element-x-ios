@@ -1198,7 +1198,7 @@
 "screen_room_timeline_add_reaction" = "Προσθήκη emoji";
 "screen_room_timeline_beginning_of_room" = "Αυτή είναι η αρχή του %1$@.";
 "screen_room_timeline_beginning_of_room_no_name" = "Αυτή είναι η αρχή τούτης της συνομιλίας.";
-"screen_room_timeline_legacy_call" = "Μη υποστηριζόμενη κλήση. Ρώτα εάν ο καλών μπορεί να χρησιμοποιήσει τη νέα εφαρμογή Element X.";
+"screen_room_timeline_legacy_call" = "Μη υποστηριζόμενη κλήση. Ρώτα εάν ο καλών μπορεί να χρησιμοποιήσει τη νέα εφαρμογή Privox.";
 "screen_room_timeline_less_reactions" = "Εμφάνιση λιγότερων";
 "screen_room_timeline_message_copied" = "Το μήνυμα αντιγράφηκε";
 "screen_room_timeline_no_permission_to_post" = "Δεν έχετε δικαιώματα για να δημοσιεύσετε σε αυτήν την αίθουσα";
@@ -1230,7 +1230,7 @@
 "screen_roomlist_main_space_title" = "Συνομιλίες";
 "screen_roomlist_mark_as_read" = "Επισήμανση ως αναγνωσμένου";
 "screen_roomlist_mark_as_unread" = "Επισήμανση ως μη αναγνωσμένου";
-"screen_server_confirmation_message_login_element_dot_io" = "Ένας ιδιωτικός διακομιστής για υπαλλήλους του Element.";
+"screen_server_confirmation_message_login_element_dot_io" = "Γρήγορος και ασφαλής διακομιστής";
 "screen_server_confirmation_message_login_matrix_dot_org" = "Το Matrix είναι ένα ανοιχτό δίκτυο για ασφαλή, αποκεντρωμένη επικοινωνία.";
 "screen_server_confirmation_message_register" = "Εδώ θα ζουν οι συνομιλίες σου - όπως θα χρησιμοποιούσες έναν πάροχο email για να διατηρήσεις τα email σου.";
 "screen_server_confirmation_title_login" = "Πρόκειται να συνδεθείς στο %1$@";

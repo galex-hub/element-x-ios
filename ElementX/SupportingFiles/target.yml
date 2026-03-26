@@ -53,7 +53,7 @@ targets:
         CFBundleURLTypes: [
           {
             CFBundleTypeRole: Editor,
-            CFBundleURLName: "Element Call",
+            CFBundleURLName: "Privox Call",
             CFBundleURLSchemes: [
               io.element.call
             ]
@@ -97,7 +97,7 @@ targets:
           voip
         ]
         BGTaskSchedulerPermittedIdentifiers: [
-          io.element.elementx.background.refresh
+          im.privox.app.background.refresh
         ]
         UTExportedTypeDeclarations:
         - UTTypeConformsTo: [public.text]
@@ -115,16 +115,17 @@ targets:
       properties:
         aps-environment: development
         com.apple.developer.associated-domains:
-        - applinks:element.io
-        - applinks:app.element.io
-        - applinks:staging.element.io
-        - applinks:develop.element.io
-        - applinks:mobile.element.io
-        - applinks:call.element.io
-        - applinks:call.element.dev
-        - applinks:matrix.to
+        - applinks:privox.im
+        - applinks:app.privox.im
+        - applinks:staging.privox.im
+        - applinks:develop.privox.im
+        - applinks:mobile.privox.im
+        - applinks:call.privox.im
+        - applinks:auth.privox.im
+        - applinks:matrix.privox.im
         # - applinks:localhost?mode=developer # developer mode only works with https (but self-signed is fine).
-        - webcredentials:*.element.io
+        - webcredentials:privox.im
+        - webcredentials:*.privox.im
         com.apple.developer.usernotifications.communication: true
         com.apple.security.app-sandbox: true
         com.apple.security.application-groups:
@@ -138,6 +139,7 @@ targets:
     settings:
       base:
         PRODUCT_NAME: $(APP_NAME)
+        PRODUCT_MODULE_NAME: ElementX
         PRODUCT_BUNDLE_IDENTIFIER: $(BASE_BUNDLE_IDENTIFIER)
         MARKETING_VERSION: $(MARKETING_VERSION)
         CURRENT_PROJECT_VERSION: $(CURRENT_PROJECT_VERSION)

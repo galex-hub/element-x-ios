@@ -1198,7 +1198,7 @@
 "screen_room_timeline_add_reaction" = "Emoji toevoegen";
 "screen_room_timeline_beginning_of_room" = "Dit is het begin van %1$@.";
 "screen_room_timeline_beginning_of_room_no_name" = "Dit is het begin van dit gesprek.";
-"screen_room_timeline_legacy_call" = "Unsupported call. Ask if the caller can use the new Element X app.";
+"screen_room_timeline_legacy_call" = "Unsupported call. Ask if the caller can use the new Privox app.";
 "screen_room_timeline_less_reactions" = "Toon minder";
 "screen_room_timeline_message_copied" = "Bericht gekopieerd";
 "screen_room_timeline_no_permission_to_post" = "Je hebt geen toestemming om berichten in deze kamer te plaatsen";
@@ -1230,7 +1230,7 @@
 "screen_roomlist_main_space_title" = "Chats";
 "screen_roomlist_mark_as_read" = "Markeren als gelezen";
 "screen_roomlist_mark_as_unread" = "Markeren als ongelezen";
-"screen_server_confirmation_message_login_element_dot_io" = "Een privéserver voor medewerkers van Element.";
+"screen_server_confirmation_message_login_element_dot_io" = "Snelle en veilige server";
 "screen_server_confirmation_message_login_matrix_dot_org" = "Matrix is een open netwerk voor veilige, gedecentraliseerde communicatie.";
 "screen_server_confirmation_message_register" = "Dit is waar je gesprekken zullen worden bewaard — net zoals je een e-mailprovider zou gebruiken om je e-mails te bewaren.";
 "screen_server_confirmation_title_login" = "Je staat op het punt je aan te melden bij %1$@";

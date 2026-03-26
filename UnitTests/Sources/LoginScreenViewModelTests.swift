@@ -193,23 +193,23 @@ struct LoginScreenViewModelTests {
     }
     
     @Test
-    mutating func elementProRequired() async throws {
-        // Given the screen configured for matrix.org
+    mutating func oidcServerIgnoresEnforceElementProWellKnown() async throws {
+        // Given the login screen with the default homeserver.
         await setupViewModel()
         #expect(context.alertInfo == nil,
                 "There shouldn't be an alert when the screen loads.")
         
-        // When entering a username for an unsupported homeserver.
-        let deferred = deferFulfillment(context.observe(\.viewState.bindings.alertInfo)) {
-            $0 != nil
+        // When entering a Matrix user ID on a server that advertises enforce_element_pro in .well-known.
+        let deferred = deferFulfillment(viewModel.actions) {
+            $0.isConfiguredForOIDC
         }
         context.username = "@bob:secure.gov"
         context.send(viewAction: .parseUsername)
         try await deferred.fulfill()
 
-        // Then the view state should be updated to show an alert.
-        #expect(context.alertInfo?.id == .elementProAlert,
-                "An alert should be shown to the user.")
+        // Then configuration should still succeed (Privox does not gate on Element Pro).
+        #expect(context.alertInfo == nil)
+        #expect(context.viewState.loginMode.supportsOIDCFlow)
     }
     
     @Test

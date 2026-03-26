@@ -108,8 +108,14 @@ class SettingsFlowCoordinator: FlowCoordinatorProtocol {
                 case .advancedSettings:
                     presentAdvancedSettings()
                 case .labs:
+                    guard AppSettings.appBuildType != .release else {
+                        break
+                    }
                     presentLabs()
                 case .developerOptions:
+                    guard AppSettings.appBuildType != .release else {
+                        break
+                    }
                     presentDeveloperOptions()
                 case .deactivateAccount:
                     presentDeactivateAccount()

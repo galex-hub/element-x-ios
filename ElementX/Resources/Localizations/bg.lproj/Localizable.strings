@@ -1198,7 +1198,7 @@
 "screen_room_timeline_add_reaction" = "Добавяне на емоджи";
 "screen_room_timeline_beginning_of_room" = "Това е началото на %1$@.";
 "screen_room_timeline_beginning_of_room_no_name" = "Това е началото на този разговор.";
-"screen_room_timeline_legacy_call" = "Unsupported call. Ask if the caller can use the new Element X app.";
+"screen_room_timeline_legacy_call" = "Unsupported call. Ask if the caller can use the new Privox app.";
 "screen_room_timeline_less_reactions" = "Показване на по-малко";
 "screen_room_timeline_message_copied" = "Съобщението е копирано";
 "screen_room_timeline_no_permission_to_post" = "Нямате разрешение да публикувате в тази стая";
@@ -1230,7 +1230,7 @@
 "screen_roomlist_main_space_title" = "Всички чатове";
 "screen_roomlist_mark_as_read" = "Отбелязване като прочетено";
 "screen_roomlist_mark_as_unread" = "Отбелязване като непрочетено";
-"screen_server_confirmation_message_login_element_dot_io" = "Частен сървър за служителите на Element.";
+"screen_server_confirmation_message_login_element_dot_io" = "Бърз и сигурен сървър";
 "screen_server_confirmation_message_login_matrix_dot_org" = "Matrix е отворена мрежа за сигурна, децентрализирана комуникация.";
 "screen_server_confirmation_message_register" = "Това е мястото, където ще живеят вашите разговори — точно както бихте използвали имейл доставчик, за да съхранявате вашите имейли.";
 "screen_server_confirmation_title_login" = "На път сте да влезете в %1$@";

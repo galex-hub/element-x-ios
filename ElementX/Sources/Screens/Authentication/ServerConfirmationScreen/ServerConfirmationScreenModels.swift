@@ -57,7 +57,7 @@ struct ServerConfirmationScreenViewState: BindableState {
         case .login:
             if homeserverAddress == "matrix.org" {
                 L10n.screenServerConfirmationMessageLoginMatrixDotOrg
-            } else if homeserverAddress == "element.io" {
+            } else if homeserverAddress == "privox.im" {
                 L10n.screenServerConfirmationMessageLoginElementDotIo
             } else {
                 ""
@@ -95,8 +95,6 @@ enum ServerConfirmationScreenAlert: Hashable {
     case login
     /// An alert that informs the user that registration isn't supported.
     case registration
-    /// An alert that informs the user that Element Pro should be used for a particular server.
-    case elementProRequired(serverName: String)
     /// An unknown error has occurred.
     case unknownError
 }

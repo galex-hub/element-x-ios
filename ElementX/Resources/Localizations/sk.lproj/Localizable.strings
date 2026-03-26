@@ -1198,7 +1198,7 @@
 "screen_room_timeline_add_reaction" = "Pridať emoji";
 "screen_room_timeline_beginning_of_room" = "Toto je začiatok %1$@.";
 "screen_room_timeline_beginning_of_room_no_name" = "Toto je začiatok tejto konverzácie.";
-"screen_room_timeline_legacy_call" = "Nepodporovaný hovor. Opýtajte sa, či volajúci môže použiť novú aplikáciu Element X.";
+"screen_room_timeline_legacy_call" = "Nepodporovaný hovor. Opýtajte sa, či volajúci môže použiť novú aplikáciu Privox.";
 "screen_room_timeline_less_reactions" = "Zobraziť menej";
 "screen_room_timeline_message_copied" = "Správa skopírovaná";
 "screen_room_timeline_no_permission_to_post" = "Nemáte povolenie uverejňovať príspevky v tejto miestnosti";
@@ -1230,7 +1230,7 @@
 "screen_roomlist_main_space_title" = "Všetky konverzácie";
 "screen_roomlist_mark_as_read" = "Označiť ako prečítané";
 "screen_roomlist_mark_as_unread" = "Označiť ako neprečítané";
-"screen_server_confirmation_message_login_element_dot_io" = "Súkromný server pre zamestnancov spoločnosti Element.";
+"screen_server_confirmation_message_login_element_dot_io" = "Rýchly a bezpečný server";
 "screen_server_confirmation_message_login_matrix_dot_org" = "Matrix je otvorená sieť pre bezpečnú a decentralizovanú komunikáciu.";
 "screen_server_confirmation_message_register" = "Tu budú žiť vaše konverzácie - podobne ako používate poskytovateľa e-mailových služieb na uchovávanie e-mailov.";
 "screen_server_confirmation_title_login" = "Chystáte sa prihlásiť do %1$@";

@@ -1198,7 +1198,7 @@
 "screen_room_timeline_add_reaction" = "반응 추가";
 "screen_room_timeline_beginning_of_room" = "%1$@의 시작입니다.";
 "screen_room_timeline_beginning_of_room_no_name" = "대화의 시작입니다.";
-"screen_room_timeline_legacy_call" = "지원되지 않는 통화입니다. 발신자에게 새로운 Element X 앱을 사용할 수 있는지 문의하시기 바랍니다.";
+"screen_room_timeline_legacy_call" = "지원되지 않는 통화입니다. 발신자에게 새로운 Privox 앱을 사용할 수 있는지 문의하시기 바랍니다.";
 "screen_room_timeline_less_reactions" = "덜 보기";
 "screen_room_timeline_message_copied" = "메시지 복사됨";
 "screen_room_timeline_no_permission_to_post" = "이 방에 게시할 수 있는 권한이 없습니다.";
@@ -1230,7 +1230,7 @@
 "screen_roomlist_main_space_title" = "채팅";
 "screen_roomlist_mark_as_read" = "읽음으로 표시";
 "screen_roomlist_mark_as_unread" = "읽지 않음으로 표시";
-"screen_server_confirmation_message_login_element_dot_io" = "Element 직원을 위한 전용 서버.";
+"screen_server_confirmation_message_login_element_dot_io" = "빠르고 안전한 서버";
 "screen_server_confirmation_message_login_matrix_dot_org" = "Matrix 는 안전하고 분산된 커뮤니케이션을 위한 개방형 네트워크입니다.";
 "screen_server_confirmation_message_register" = "이곳이 귀하의 대화 공간입니다 — 이메일 제공업체를 사용해 이메일을 관리하는 것처럼 말이죠.";
 "screen_server_confirmation_title_login" = "당신은 %1$@ 에 로그인하려 합니다";

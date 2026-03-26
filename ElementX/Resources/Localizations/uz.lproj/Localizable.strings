@@ -1198,7 +1198,7 @@
 "screen_room_timeline_add_reaction" = "Emoji qo'shmoq";
 "screen_room_timeline_beginning_of_room" = "Bu %1$@ni boshlanishi";
 "screen_room_timeline_beginning_of_room_no_name" = "Bu suhbatning boshlanishi.";
-"screen_room_timeline_legacy_call" = "Chaqiruv qabul qilinmaydi. Chaqiruvchidan yangi Element X ilovasidan foydalanishi mumkinligini so‘rang.";
+"screen_room_timeline_legacy_call" = "Chaqiruv qabul qilinmaydi. Chaqiruvchidan yangi Privox ilovasidan foydalanishi mumkinligini so‘rang.";
 "screen_room_timeline_less_reactions" = "Kamroq ko'rsatish";
 "screen_room_timeline_message_copied" = "Xabar nusxalandi";
 "screen_room_timeline_no_permission_to_post" = "Sizda bu xonaga post yozishga ruxsat yo‘q";
@@ -1230,7 +1230,7 @@
 "screen_roomlist_main_space_title" = "Suhbatlar";
 "screen_roomlist_mark_as_read" = "Oʻqilgan deb belgilash";
 "screen_roomlist_mark_as_unread" = "Oʻqilmagan deb belgilash";
-"screen_server_confirmation_message_login_element_dot_io" = "Element xodimlari uchun shaxsiy server.";
+"screen_server_confirmation_message_login_element_dot_io" = "Tez va xavfsiz server";
 "screen_server_confirmation_message_login_matrix_dot_org" = "Matrix xavfsiz, markazlashmagan aloqa uchun ochiq tarmoqdir.";
 "screen_server_confirmation_message_register" = "Bu sizning suhbatlaringiz yashaydigan joy - xuddi siz elektron pochta xabarlaringizni saqlash uchun elektron pochta provayderidan foydalanganingiz kabi.";
 "screen_server_confirmation_title_login" = "Siz tizimga kirmoqchisiz%1$@";

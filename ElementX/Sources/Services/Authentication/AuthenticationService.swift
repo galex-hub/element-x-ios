@@ -94,8 +94,6 @@ class AuthenticationService: AuthenticationServiceProtocol {
         } catch ClientBuildError.SlidingSyncVersion(let error) {
             MXLog.info("User entered a homeserver that isn't configured for sliding sync: \(error)")
             return .failure(.slidingSyncNotAvailable)
-        } catch RemoteSettingsError.elementProRequired(let serverName) {
-            return .failure(.elementProRequired(serverName: serverName))
         } catch {
             MXLog.error("Failed configuring a server: \(error)")
             return .failure(.invalidHomeserverAddress)
@@ -214,8 +212,6 @@ class AuthenticationService: AuthenticationServiceProtocol {
             } catch let error as HumanQrLoginError {
                 MXLog.error("QRCode login error: \(error)")
                 progressSubject.send(completion: .failure(error.serviceError))
-            } catch RemoteSettingsError.elementProRequired(let serverName) {
-                progressSubject.send(completion: .failure(.elementProRequired(serverName: serverName)))
             } catch {
                 MXLog.error("QRCode login unknown error: \(error)")
                 progressSubject.send(completion: .failure(.qrCodeError(.unknown)))
@@ -244,7 +240,7 @@ class AuthenticationService: AuthenticationServiceProtocol {
                                                         clientSessionDelegate: userSessionStore.clientSessionDelegate,
                                                         appSettings: appSettings,
                                                         appHooks: appHooks)
-        try await appHooks.remoteSettingsHook.initializeCache(using: client, applyingTo: appSettings).get()
+        await appHooks.remoteSettingsHook.initializeCache(using: client, applyingTo: appSettings)
         
         return client
     }

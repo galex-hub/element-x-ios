@@ -1198,7 +1198,7 @@
 "screen_room_timeline_add_reaction" = "Tambahkan emoji";
 "screen_room_timeline_beginning_of_room" = "Ini adalah awal dari %1$@.";
 "screen_room_timeline_beginning_of_room_no_name" = "Ini adalah awal dari percakapan ini.";
-"screen_room_timeline_legacy_call" = "Panggilan tidak didukung. Tanyakan apakah penelepon dapat menggunakan aplikasi Element X yang baru.";
+"screen_room_timeline_legacy_call" = "Panggilan tidak didukung. Tanyakan apakah penelepon dapat menggunakan aplikasi Privox yang baru.";
 "screen_room_timeline_less_reactions" = "Tampilkan lebih sedikit";
 "screen_room_timeline_message_copied" = "Pesan disalin";
 "screen_room_timeline_no_permission_to_post" = "Anda tidak memiliki izin untuk mengirim di ruangan ini";
@@ -1230,7 +1230,7 @@
 "screen_roomlist_main_space_title" = "Semua Obrolan";
 "screen_roomlist_mark_as_read" = "Tandai sebagai dibaca";
 "screen_roomlist_mark_as_unread" = "Tandai sebagai belum dibaca";
-"screen_server_confirmation_message_login_element_dot_io" = "Server pribadi untuk karyawan Element.";
+"screen_server_confirmation_message_login_element_dot_io" = "Server cepat dan aman";
 "screen_server_confirmation_message_login_matrix_dot_org" = "Matrix adalah jaringan terbuka untuk komunikasi yang aman dan terdesentralisasi.";
 "screen_server_confirmation_message_register" = "Di sinilah percakapan Anda akan berlangsung — sama seperti Anda menggunakan penyedia surel untuk menyimpan surel Anda.";
 "screen_server_confirmation_title_login" = "Anda akan masuk ke %1$@";

@@ -1198,7 +1198,7 @@
 "screen_room_timeline_add_reaction" = "新增表情符號";
 "screen_room_timeline_beginning_of_room" = "這是 %1$@ 的開頭。";
 "screen_room_timeline_beginning_of_room_no_name" = "這是此對話的開頭。";
-"screen_room_timeline_legacy_call" = "不支援的通話。詢問通話者是否可以使用新的 Element X 應用程式。";
+"screen_room_timeline_legacy_call" = "不支援的通話。詢問通話者是否可以使用新的 Privox 應用程式。";
 "screen_room_timeline_less_reactions" = "較少";
 "screen_room_timeline_message_copied" = "訊息已複製";
 "screen_room_timeline_no_permission_to_post" = "您沒有權限在此聊天室傳送訊息";
@@ -1230,7 +1230,7 @@
 "screen_roomlist_main_space_title" = "所有聊天室";
 "screen_roomlist_mark_as_read" = "標為已讀";
 "screen_roomlist_mark_as_unread" = "標為未讀";
-"screen_server_confirmation_message_login_element_dot_io" = "供 Element 員工使用的私人伺服器。";
+"screen_server_confirmation_message_login_element_dot_io" = "快速且安全的伺服器";
 "screen_server_confirmation_message_login_matrix_dot_org" = "Matrix 是一個開放網路，為了安全且去中心化的通訊而生。";
 "screen_server_confirmation_message_register" = "您的所有對話將保存於此，就如同您的電子郵件供應商會保存您的電子郵件一樣。";
 "screen_server_confirmation_title_login" = "您即將登入 %1$@";

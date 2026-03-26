@@ -100,14 +100,6 @@ class ServerSelectionScreenViewModel: ServerSelectionScreenViewModelType, Server
             state.bindings.alertInfo = AlertInfo(id: .registrationAlert,
                                                  title: L10n.commonServerNotSupported,
                                                  message: L10n.errorAccountCreationNotPossible)
-        case .elementProRequired(let serverName):
-            state.bindings.alertInfo = AlertInfo(id: .elementProAlert,
-                                                 title: L10n.screenChangeServerErrorElementProRequiredTitle,
-                                                 message: L10n.screenChangeServerErrorElementProRequiredMessage(serverName),
-                                                 primaryButton: .init(title: L10n.screenChangeServerErrorElementProRequiredActionIos) {
-                                                     UIApplication.shared.open(self.appSettings.elementProAppStoreURL)
-                                                 },
-                                                 secondaryButton: .init(title: L10n.actionCancel, role: .cancel, action: nil))
         default:
             showFooterMessage(L10n.errorUnknown)
         }

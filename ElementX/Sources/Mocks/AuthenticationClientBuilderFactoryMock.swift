@@ -37,8 +37,7 @@ extension AuthenticationClientFactoryMock {
                                                              slidingSyncVersion: .native,
                                                              oidcLoginURL: "https://auth.secure.gov/oidc",
                                                              supportsOIDCCreatePrompt: false,
-                                                             supportsPasswordLogin: false,
-                                                             elementWellKnown: "{\"version\":1,\"enforce_element_pro\":true}"))
+                                                             supportsPasswordLogin: false))
         ]
     }
     

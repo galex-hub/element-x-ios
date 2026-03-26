@@ -1198,7 +1198,7 @@
 "screen_room_timeline_add_reaction" = "Lisää reaktio";
 "screen_room_timeline_beginning_of_room" = "Tämä on huoneen %1$@ alku.";
 "screen_room_timeline_beginning_of_room_no_name" = "Tämä on tämän keskustelun alku.";
-"screen_room_timeline_legacy_call" = "Puhelu, jota ei tueta. Kysy, voiko soittaja käyttää uutta Element X -sovellusta.";
+"screen_room_timeline_legacy_call" = "Puhelu, jota ei tueta. Kysy, voiko soittaja käyttää uutta Privox -sovellusta.";
 "screen_room_timeline_less_reactions" = "Näytä vähemmän";
 "screen_room_timeline_message_copied" = "Viesti kopioitu";
 "screen_room_timeline_no_permission_to_post" = "Sinulla ei ole oikeutta kirjoittaa tässä huoneessa";
@@ -1230,7 +1230,7 @@
 "screen_roomlist_main_space_title" = "Keskustelut";
 "screen_roomlist_mark_as_read" = "Merkitse luetuksi";
 "screen_roomlist_mark_as_unread" = "Merkitse lukemattomaksi";
-"screen_server_confirmation_message_login_element_dot_io" = "Yksityinen palvelin Elementin työntekijöille.";
+"screen_server_confirmation_message_login_element_dot_io" = "Nopea ja turvallinen palvelin";
 "screen_server_confirmation_message_login_matrix_dot_org" = "Matrix on avoin verkko turvallista, hajautettua viestintää varten.";
 "screen_server_confirmation_message_register" = "Keskustelusi asuvat täällä — aivan kuten aivan kuten käyttäisit sähköpostipalveluntarjoajaa sähköpostiesi säilyttämiseen.";
 "screen_server_confirmation_title_login" = "Olet kirjautumassa sisään %1$@-palvelimelle";

@@ -99,7 +99,7 @@ struct InfoPlistReader {
     }
     
     var elementCallScheme: String {
-        customSchemeForName("Element Call")
+        customSchemeForName("Privox Call")
     }
     
     // MARK: - Mention Pills

@@ -1,5 +1,5 @@
 {
-  "originHash" : "90ff17a924d5f3b110bd4a178ebe9a8ab0500930275f80318a65e0110bec8b29",
+  "originHash" : "9fdf97a8e597f858f0365a6cd547d69173744ca212bbcaad5d426e8fe0d20ad8",
   "pins" : [
     {
       "identity" : "compound-design-tokens",
@@ -51,8 +51,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/mhdhejazi/Dynamic",
       "state" : {
-        "revision" : "ab9a2570862d54aed2663691bb767f881226a12f",
-        "version" : "1.2.0"
+        "revision" : "23dfe6ff2ed232c58df3e62bc15b96f1ed643c5b",
+        "version" : "1.0.0"
       }
     },
     {

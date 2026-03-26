@@ -1198,7 +1198,7 @@
 "screen_room_timeline_add_reaction" = "Add a reaction";
 "screen_room_timeline_beginning_of_room" = "Tai yra %1$@ pradžia.";
 "screen_room_timeline_beginning_of_room_no_name" = "Tai yra šio pokalbio pradžia.";
-"screen_room_timeline_legacy_call" = "Unsupported call. Ask if the caller can use the new Element X app.";
+"screen_room_timeline_legacy_call" = "Unsupported call. Ask if the caller can use the new Privox app.";
 "screen_room_timeline_less_reactions" = "Show less";
 "screen_room_timeline_message_copied" = "Message copied";
 "screen_room_timeline_no_permission_to_post" = "Neturite leidimą skelbti šiame kambaryje.";
@@ -1230,7 +1230,7 @@
 "screen_roomlist_main_space_title" = "Pokalbiai";
 "screen_roomlist_mark_as_read" = "Mark as read";
 "screen_roomlist_mark_as_unread" = "Mark as unread";
-"screen_server_confirmation_message_login_element_dot_io" = "Privatus serveris “Element” darbuotojams.";
+"screen_server_confirmation_message_login_element_dot_io" = "Greitas ir saugus serveris";
 "screen_server_confirmation_message_login_matrix_dot_org" = "Matrix yra atviras tinklas, skirtas saugiam, decentralizuotam bendravimui.";
 "screen_server_confirmation_message_register" = "Čia bus saugomi Jūsų pokalbiai - panašiai kaip el. pašto paslaugų teikėjas saugo Jūsų el. laiškus.";
 "screen_server_confirmation_title_login" = "Jūs ruošiatės prisijungti prie %1$@";

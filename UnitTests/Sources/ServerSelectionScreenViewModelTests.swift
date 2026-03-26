@@ -94,22 +94,22 @@ struct ServerSelectionScreenViewModelTests {
     }
     
     @Test
-    mutating func elementProRequiredAlert() async throws {
+    mutating func selectOIDCServerWithEnforceElementProWellKnown() async throws {
         // Given a view model for login.
         setup(authenticationFlow: .login)
         #expect(service.homeserver.value.loginMode == .unknown)
         #expect(clientFactory.makeClientHomeserverAddressSessionDirectoriesPassphraseClientSessionDelegateAppSettingsAppHooksCallsCount == 0)
-        #expect(context.alertInfo == nil)
         
-        // When selecting a server that requires Element Pro
+        // When selecting a server that advertises enforce_element_pro in .well-known.
         context.homeserverAddress = "secure.gov"
-        let deferred = deferFulfillment(context.observe(\.alertInfo)) { $0 != nil }
+        let deferred = deferFulfillment(viewModel.actions) { $0 == .updated }
         context.send(viewAction: .confirm)
         try await deferred.fulfill()
         
-        // Then selection should fail with an alert telling the user to download Element Pro.
+        // Then selection should succeed (Privox does not gate on Element Pro).
         #expect(clientFactory.makeClientHomeserverAddressSessionDirectoriesPassphraseClientSessionDelegateAppSettingsAppHooksCallsCount == 1)
-        #expect(context.alertInfo?.id == .elementProAlert)
+        #expect(context.alertInfo == nil)
+        #expect(service.homeserver.value.loginMode.supportsOIDCFlow)
     }
     
     @Test

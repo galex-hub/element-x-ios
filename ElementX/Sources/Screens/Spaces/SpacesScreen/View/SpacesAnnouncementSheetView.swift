@@ -14,6 +14,10 @@ struct SpacesAnnouncementSheetView: View {
     
     let context: SpacesScreenViewModel.Context
     
+    private var shouldShowBetaMessaging: Bool {
+        AppSettings.appBuildType != .release
+    }
+    
     var body: some View {
         FullscreenDialog(topPadding: 44, horizontalPadding: 24) {
             content
@@ -37,23 +41,27 @@ struct SpacesAnnouncementSheetView: View {
                         .font(.compound.headingMDBold)
                         .foregroundStyle(.compound.textPrimary)
                         .multilineTextAlignment(.center)
-                    Text(L10n.commonBeta)
-                        .font(.compound.bodyXSSemibold)
-                        .foregroundStyle(.compound.textInfoPrimary)
-                        .textCase(.uppercase)
-                        .padding(.horizontal, 10)
-                        .padding(.vertical, 5)
-                        .background {
-                            RoundedRectangle(cornerRadius: 6)
-                                .fill(.compound.bgInfoSubtle)
-                            RoundedRectangle(cornerRadius: 6)
-                                .stroke(.compound.borderInfoSubtle)
-                        }
+                    if shouldShowBetaMessaging {
+                        Text(L10n.commonBeta)
+                            .font(.compound.bodyXSSemibold)
+                            .foregroundStyle(.compound.textInfoPrimary)
+                            .textCase(.uppercase)
+                            .padding(.horizontal, 10)
+                            .padding(.vertical, 5)
+                            .background {
+                                RoundedRectangle(cornerRadius: 6)
+                                    .fill(.compound.bgInfoSubtle)
+                                RoundedRectangle(cornerRadius: 6)
+                                    .stroke(.compound.borderInfoSubtle)
+                            }
+                    }
                 }
-                Text(L10n.screenSpaceAnnouncementSubtitle)
-                    .font(.compound.bodyMD)
-                    .foregroundStyle(.compound.textSecondary)
-                    .multilineTextAlignment(.center)
+                if shouldShowBetaMessaging {
+                    Text(L10n.screenSpaceAnnouncementSubtitle)
+                        .font(.compound.bodyMD)
+                        .foregroundStyle(.compound.textSecondary)
+                        .multilineTextAlignment(.center)
+                }
             }
             
             visualListItems

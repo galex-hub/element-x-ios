@@ -82,7 +82,7 @@ class BugReportService: NSObject, BugReportServiceProtocol {
         }
         
         if let crashEventID = lastCrashEventID {
-            params.append(MultipartFormData(key: "crash_report", type: .text(value: "<https://sentry.tools.element.io/organizations/element/issues/?project=44&query=\(crashEventID)>")))
+            params.append(MultipartFormData(key: "crash_report", type: .text(value: "<https://sentry.tools.privox.im/organizations/element/issues/?project=44&query=\(crashEventID)>")))
             bugReport.githubLabels.append("crash")
         }
         

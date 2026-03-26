@@ -26,6 +26,27 @@ final class ServerConfirmationScreenViewModelTests {
     init() {
         AppSettings.resetAllSettings()
         appSettings = AppSettings()
+        // Align the default account provider with AuthenticationClientFactoryMock homeserver keys.
+        appSettings.override(accountProviders: ["matrix.org"],
+                             allowOtherAccountProviders: true,
+                             hideBrandChrome: false,
+                             pushGatewayBaseURL: appSettings.pushGatewayBaseURL,
+                             oidcRedirectURL: appSettings.oidcRedirectURL,
+                             websiteURL: appSettings.websiteURL,
+                             logoURL: appSettings.logoURL,
+                             copyrightURL: appSettings.copyrightURL,
+                             acceptableUseURL: appSettings.acceptableUseURL,
+                             privacyURL: appSettings.privacyURL,
+                             encryptionURL: appSettings.encryptionURL,
+                             deviceVerificationURL: appSettings.deviceVerificationURL,
+                             chatBackupDetailsURL: appSettings.chatBackupDetailsURL,
+                             identityPinningViolationDetailsURL: appSettings.identityPinningViolationDetailsURL,
+                             historySharingDetailsURL: appSettings.historySharingDetailsURL,
+                             elementWebHosts: appSettings.elementWebHosts,
+                             accountProvisioningHost: appSettings.accountProvisioningHost,
+                             bugReportApplicationID: appSettings.bugReportApplicationID,
+                             analyticsTermsURL: appSettings.analyticsTermsURL,
+                             mapTilerConfiguration: appSettings.mapTilerConfiguration)
         // These app settings are kept local to the tests on purpose as if they are registered in the
         // ServiceLocator, the providers override that we apply will break other tests in the suite.
     }
@@ -209,21 +230,21 @@ final class ServerConfirmationScreenViewModelTests {
     }
     
     @Test
-    func elementProRequired() async throws {
-        // Given a view model for login using a service that hasn't been configured and the default server requires Element Pro.
-        setupViewModel(authenticationFlow: .login, supportsOIDC: false, supportsOIDCCreatePrompt: false, supportsPasswordLogin: false, requiresElementPro: true)
+    func homeserverWithEnforceElementProWellKnownConfiguresSuccessfully() async throws {
+        // Given a view model for login using a service that hasn't been configured and matrix.org advertises enforce_element_pro.
+        setupViewModel(authenticationFlow: .login, requiresElementPro: true)
         #expect(service.homeserver.value.loginMode == .unknown)
         #expect(clientFactory.makeClientHomeserverAddressSessionDirectoriesPassphraseClientSessionDelegateAppSettingsAppHooksCallsCount == 0)
         #expect(context.alertInfo == nil)
         
         // When continuing from the confirmation screen.
-        let deferred = deferFulfillment(context.observe(\.alertInfo)) { $0 != nil }
+        let deferred = deferFulfillment(viewModel.actions) { $0.isContinueWithOIDC }
         context.send(viewAction: .confirm)
         try await deferred.fulfill()
         
-        // Then the configuration should fail with an alert telling the user to download Element Pro.
+        // Then configuration should succeed with OIDC (Privox does not gate on Element Pro).
         #expect(clientFactory.makeClientHomeserverAddressSessionDirectoriesPassphraseClientSessionDelegateAppSettingsAppHooksCallsCount == 1)
-        #expect(context.alertInfo?.id == .elementProRequired(serverName: "matrix.org"))
+        #expect(context.alertInfo == nil)
     }
     
     // MARK: - Picker mode
@@ -324,7 +345,7 @@ final class ServerConfirmationScreenViewModelTests {
                                 supportsPasswordLogin: Bool = true,
                                 restrictedFlow: Bool = false,
                                 requiresElementPro: Bool = false) {
-        var mode = ServerConfirmationScreenMode.confirmation("matrix.org")
+        var mode = ServerConfirmationScreenMode.confirmation(appSettings.accountProviders[0])
         if restrictedFlow {
             appSettings.override(accountProviders: ["matrix.org", "beta.matrix.org"],
                                  allowOtherAccountProviders: false,
@@ -367,7 +388,7 @@ final class ServerConfirmationScreenViewModelTests {
         viewModel = ServerConfirmationScreenViewModel(authenticationService: service,
                                                       mode: mode,
                                                       authenticationFlow: authenticationFlow,
-                                                      appSettings: ServiceLocator.shared.settings,
+                                                      appSettings: appSettings,
                                                       userIndicatorController: UserIndicatorControllerMock())
         
         // Add a fake window in order for the OIDC flow to continue

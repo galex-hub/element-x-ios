@@ -17,7 +17,7 @@ struct ShareSheetScreen: View {
                 .foregroundColor(.secondary)
                 .multilineTextAlignment(.center)
             
-            ShareLink(item: URL(string: "https://element.io")!, subject: Text("The subject"), message: Text("The message"))
+            ShareLink(item: URL(string: "https://privox.im")!, subject: Text("The subject"), message: Text("The message"))
                 .padding(.top)
         }
     }

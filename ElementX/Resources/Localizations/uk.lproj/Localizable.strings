@@ -1198,7 +1198,7 @@
 "screen_room_timeline_add_reaction" = "Додати смайлики";
 "screen_room_timeline_beginning_of_room" = "Це початок %1$@";
 "screen_room_timeline_beginning_of_room_no_name" = "Це початок цієї розмови.";
-"screen_room_timeline_legacy_call" = "Непідтримуваний виклик. Запитайте, чи може абонент використовувати новий застосунок Element X.";
+"screen_room_timeline_legacy_call" = "Непідтримуваний виклик. Запитайте, чи може абонент використовувати новий застосунок Privox.";
 "screen_room_timeline_less_reactions" = "Показувати менше";
 "screen_room_timeline_message_copied" = "Повідомлення скопійовано";
 "screen_room_timeline_no_permission_to_post" = "У вас немає дозволу на публікацію в цій кімнаті";
@@ -1230,7 +1230,7 @@
 "screen_roomlist_main_space_title" = "Бесіди";
 "screen_roomlist_mark_as_read" = "Позначити прочитаним";
 "screen_roomlist_mark_as_unread" = "Позначити непрочитаним";
-"screen_server_confirmation_message_login_element_dot_io" = "Приватний сервер для співробітників Element.";
+"screen_server_confirmation_message_login_element_dot_io" = "Швидкий і безпечний сервер";
 "screen_server_confirmation_message_login_matrix_dot_org" = "Matrix — це відкрита мережа для безпечної, децентралізованої комунікації.";
 "screen_server_confirmation_message_register" = "Тут розміщуватимуться ваші розмови — так само як у поштовій скриньці для зберігання своїх електронних листів.";
 "screen_server_confirmation_title_login" = "Ви збираєтесь увійти в %1$@";

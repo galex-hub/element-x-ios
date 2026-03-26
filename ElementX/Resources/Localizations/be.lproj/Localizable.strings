@@ -1198,7 +1198,7 @@
 "screen_room_timeline_add_reaction" = "Дадаць эмодзі";
 "screen_room_timeline_beginning_of_room" = "Гэта пачатак %1$@.";
 "screen_room_timeline_beginning_of_room_no_name" = "Гэта пачатак гэтай размовы.";
-"screen_room_timeline_legacy_call" = "Unsupported call. Ask if the caller can use the new Element X app.";
+"screen_room_timeline_legacy_call" = "Unsupported call. Ask if the caller can use the new Privox app.";
 "screen_room_timeline_less_reactions" = "Паказаць менш";
 "screen_room_timeline_message_copied" = "Паведамленне скапіравана";
 "screen_room_timeline_no_permission_to_post" = "У Вас няма дазволу на публікацыю ў гэтым пакоі";
@@ -1230,7 +1230,7 @@
 "screen_roomlist_main_space_title" = "Усе чаты";
 "screen_roomlist_mark_as_read" = "Пазначыць як прачытанае";
 "screen_roomlist_mark_as_unread" = "Пазначыць як непрачытанае";
-"screen_server_confirmation_message_login_element_dot_io" = "Прыватны сервер для супрацоўнікаў Element.";
+"screen_server_confirmation_message_login_element_dot_io" = "Хуткі і бяспечны сервер";
 "screen_server_confirmation_message_login_matrix_dot_org" = "Matrix - гэта адкрытая сетка для бяспечнай, дэцэнтралізаванай сувязі.";
 "screen_server_confirmation_message_register" = "Тут будуць захоўвацца вашыя размовы - сапраўды гэтак жа, як вы выкарыстоўваеце паштовага правайдара для захоўвання сваіх лістоў.";
 "screen_server_confirmation_title_login" = "Вы збіраецеся ўвайсці ў %1$@";
